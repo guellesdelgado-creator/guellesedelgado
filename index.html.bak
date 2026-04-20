@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claude para Negócios | 5 formas de implementar</title>
+    <meta name="description" content="Descubra as 5 formas de usar o Claude que seu time ainda não está usando.">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="dark-theme">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <nav class="navbar glass">
+        <div class="container nav-content">
+            <div class="logo">
+                <i data-lucide="bot"></i>
+                <span>Claude<strong>Negócios</strong></span>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="nav-link">Comunidade V4</a>
+                <a href="#" class="btn btn-primary btn-sm">Contratar V4</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero container">
+            <div class="hero-content">
+                <div class="badge">
+                    <span class="pulse"></span> 78% das empresas já usam IA
+                </div>
+                <h1 class="font-outfit">Sua empresa ainda não? <br><span class="text-gradient">Pare de perder dinheiro.</span></h1>
+                <p class="subtitle">Seu concorrente está automatizando o que consome 40% do seu time, sem contratar ninguém novo. <span class="muted text-sm">(Fonte: Fullview, 2025)</span></p>
+                <div class="hero-actions">
+                    <a href="#solucoes" class="btn btn-primary btn-lg">Ler material <i data-lucide="arrow-right"></i></a>
+                    <a href="#" class="btn btn-outline btn-lg">Falar com especialista</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="metrics container">
+            <div class="section-header">
+                <h2>Cada semana sem IA tem um preço.</h2>
+                <p>Não é impressão. É o que as maiores pesquisas do mundo já mediram.</p>
+            </div>
+            <div class="metric-grid">
+                <div class="metric-card glass">
+                    <div class="metric-icon"><i data-lucide="trending-up"></i></div>
+                    <h3>$3,70</h3>
+                    <p>De retorno para cada $1 investido em IA</p>
+                </div>
+                <div class="metric-card glass">
+                    <div class="metric-icon"><i data-lucide="clock"></i></div>
+                    <h3>12h</h3>
+                    <p>Economizadas por semana (por vendedor)</p>
+                </div>
+                <div class="metric-card glass">
+                    <div class="metric-icon"><i data-lucide="bar-chart"></i></div>
+                    <h3>+333%</h3>
+                    <p>ROI para times que adotam o Claude Code</p>
+                </div>
+                <div class="metric-card glass">
+                    <div class="metric-icon"><i data-lucide="shield-check"></i></div>
+                    <h3>-80%</h3>
+                    <p>No tempo de resposta a vulnerabilidades</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="solucoes" class="features container">
+            <div class="section-header">
+                <h2>5 formas de usar o <span class="text-gradient">Claude</span></h2>
+                <p>IA no seu negócio não é tecnologia. É resultado real em cada área.</p>
+            </div>
+            
+            <div class="feature-list">
+                <div class="feature-item glass fade-in">
+                    <div class="feature-icon"><i data-lucide="headset"></i></div>
+                    <div class="feature-text">
+                        <h3>Atendimento</h3>
+                        <p>Claude lê o histórico, entende a dor e responde como seu melhor atendente. A qualquer hora. Para qualquer cliente.</p>
+                    </div>
+                </div>
+                <div class="feature-item glass fade-in">
+                    <div class="feature-icon"><i data-lucide="pen-tool"></i></div>
+                    <div class="feature-text">
+                        <h3>Conteúdo</h3>
+                        <p>Claude aprende sua voz, sua marca e seu tom. O que sai não parece IA. Parece você.</p>
+                    </div>
+                </div>
+                <div class="feature-item glass fade-in">
+                    <div class="feature-icon"><i data-lucide="cpu"></i></div>
+                    <div class="feature-text">
+                        <h3>Processos internos</h3>
+                        <p>Processa documentos longos, extrai o essencial e entrega a decisão clara, e não apenas o dado bruto.</p>
+                    </div>
+                </div>
+                <div class="feature-item glass fade-in">
+                    <div class="feature-icon"><i data-lucide="briefcase"></i></div>
+                    <div class="feature-text">
+                        <h3>Vendas</h3>
+                        <p>Claude personaliza cada proposta, cada follow-up e argumento. Seu time foca 100% em fechar o negócio.</p>
+                    </div>
+                </div>
+            </div>
+            
+             <div class="trusted-by">
+                <p><b>Não é tendência. É o que está acontecendo agora.</b></p>
+                <div class="logos">
+                    <span>HackerOne</span>
+                    <span>TELUS</span>
+                    <span>Palo Alto Networks</span>
+                    <span>IG Group</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="comparison container">
+            <div class="section-header">
+                <h2>O caro não é a IA.<br>É o que você perde sem ela.</h2>
+                <p>Cada hora que seu time gasta em tarefas repetitivas é dinheiro que você já pagou e não voltou.</p>
+            </div>
+
+            <div class="comparison-grid">
+                <div class="compare-card bad glass">
+                    <div class="card-header">
+                        <i data-lucide="x-circle"></i>
+                        <h3>Sem IA</h3>
+                    </div>
+                    <ul class="check-list">
+                        <li><i data-lucide="x"></i> 12h por semana perdidas em tarefas automáticas</li>
+                        <li><i data-lucide="x"></i> Atendimento lento: cliente espera e vai embora</li>
+                        <li><i data-lucide="x"></i> Conteúdo que trava a semana toda por falta de tempo</li>
+                        <li><i data-lucide="x"></i> Time focado em apagar incêndios operacionais</li>
+                    </ul>
+                </div>
+
+                <div class="compare-card good glass">
+                    <div class="card-header">
+                        <i data-lucide="check-circle-2"></i>
+                        <h3>Com IA (Claude)</h3>
+                    </div>
+                    <ul class="check-list">
+                        <li><i data-lucide="check"></i> Tarefas repetitivas resolvidas em minutos, todo dia</li>
+                        <li><i data-lucide="check"></i> Atendimento excelente em segundos.</li>
+                        <li><i data-lucide="check"></i> Conteúdo impecável pronto antes do café da manhã</li>
+                        <li><i data-lucide="check"></i> Time focado em estratégias de crescimento</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section container">
+            <div class="cta-card glass">
+                <h2>Comece essa semana.</h2>
+                <p>Com quem já fez isso +7.250 vezes.</p>
+                <a href="#" class="btn btn-primary btn-xl">Falar com especialista <i data-lucide="arrow-right"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <i data-lucide="bot"></i> Claude<strong>Modelo</strong>
+            </div>
+            <p>© 2026 V4 Company (Modelo). Todos os direitos reservados.</p>
+            <a href="#">Política de Privacidade</a>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        
+        // Add simple scroll animations with stagger
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        let delayCount = 0;
+        let lastParent = null;
+
+        document.querySelectorAll('.fade-in, .metric-card, .compare-card').forEach((el) => {
+            el.classList.add('hidden');
+            
+            // Add sequential delay for elements in the same container
+            if (el.parentElement !== lastParent) {
+                delayCount = 0;
+                lastParent = el.parentElement;
+            }
+            el.style.transitionDelay = `${delayCount * 150}ms`;
+            delayCount++;
+
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

@@ -1,41 +1,391 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- TODO: Set the document title to the name of your application -->
-    <title>Estudo de caso GD Co.</title>
-    <meta name="description" content="Entenda como nosso estudo de caso, posiciona sua clinica.">
-    <meta name="author" content="Lovable" />
-
-    <!-- TODO: Update og:title to match your application name -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GD | Engenharia de Faturamento para Cirurgia Pl&aacute;stica (Tema Claro)</title>
     
-    
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/QhDgUKx3A4R9zzUbCd9Bp31lZdk1/social-images/social-1774999398105-Cópia_de_Logotipo_Grupo_de_pagode_moderno_marrom_e_bege_(1).webp">
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@Lovable" />
-    <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/QhDgUKx3A4R9zzUbCd9Bp31lZdk1/social-images/social-1774999398105-Cópia_de_Logotipo_Grupo_de_pagode_moderno_marrom_e_bege_(1).webp">
+    <!-- Cinematic Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:ital,wght@0,600;0,800;1,400&display=swap" rel="stylesheet">
     
-  
-  
-  
-  
-  
-  
-  
-  <meta property="og:title" content="Estudo de caso GD Co.">
-  <meta name="twitter:title" content="Estudo de caso GD Co.">
-  <meta property="og:description" content="Entenda como nosso estudo de caso, posiciona sua clinica.">
-  <meta name="twitter:description" content="Entenda como nosso estudo de caso, posiciona sua clinica.">
-</head>
+    <link rel="stylesheet" href="style-white.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <script>
+        // Dual Structure Switcher (Reactive & Ironclad)
+        function updateStructure() {
+            const isMobile = (window.innerWidth < 768) || (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));
+            document.documentElement.className = isMobile ? 'is-mobile' : 'is-desktop';
+            window.isMobileDevice = isMobile;
+        }
+        updateStructure();
+        window.addEventListener('resize', updateStructure);
+    </script>
+</head>
+<body class="dual-mode">
+
+    <!-- ==========================================
+         CINEMATIC PRELOADER
+         ========================================== -->
+    <div id="gd-preloader">
+        <div class="preloader-content">
+            <img src="Logo%20laranja%20PNG.png" alt="GD Logo">
+            <div class="progress-bar-container">
+                <div class="progress-bar"></div>
+            </div>
+            <p>Carregando Dados...</p>
+        </div>
+    </div>
+
+    <!-- ==========================================
+         DESKTOP STRUCTURE (Cinematic Wide)
+         ========================================== -->
+    <div id="desktop-structure">
+        <header class="main-header">
+            <div class="container header-inner">
+                <div class="brand">
+                    <img src="Logo%20laranja%20PNG.png" alt="GD Logo" class="brand-logo">
+                </div>
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="#protocolo">Protocolo</a></li>
+                        <li><a href="#engenharia">Engenharia</a></li>
+                        <li><a href="javascript:void(0)" onclick="accessCaseStudy()">Estudo de Caso</a></li>
+                    </ul>
+                    <a href="https://wa.me/44991274335" class="cta-nav" target="_blank">Solicitar Auditoria</a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero-section">
+                <video loop muted playsinline class="background-video" id="heroVideoDesktop">
+                    <source src="Video Project 10.mp4" type="video/mp4">
+                </video>
+                <div class="video-overlay"></div>
+                
+                <div class="container hero-content">
+                    <div class="badge" data-reveal>Ultra-High Ticket Strategy</div>
+                    <h1 class="hero-title" data-reveal>
+                        A Arte da Cirurgia.<br>
+                        A Ci&ecirc;ncia do <span class="highlight">Faturamento.</span>
+                    </h1>
+                    <p class="hero-subtitle" data-reveal>
+                        Para cl&iacute;nicas de Cirurgia Pl&aacute;stica que j&aacute; alcan&ccedil;aram a excel&ecirc;ncia técnica e agora buscam a previsibilidade absoluta de lucro e escala.
+                    </p>
+                    <div class="hero-actions" data-reveal>
+                        <a href="https://wa.me/44991274335" class="btn-primary" target="_blank">Auditar minha Opera&ccedil;&atilde;o</a>
+                        <a href="https://wa.me/44991274335" class="btn-secondary" target="_blank">Falar com Estrategista</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="protocolo" class="section-padding">
+                <div class="container">
+                    <div class="section-header" data-reveal>
+                        <span class="tag">O Diagn&oacute;stico Cir&uacute;rgico</span>
+                        <h2>A ociosidade &eacute; o custo invis&iacute;vel da sua reputa&ccedil;&atilde;o.</h2>
+                    </div>
+                    
+                    <div class="grid-cards">
+                        <div class="premium-card" data-reveal>
+                            <i data-lucide="award"></i>
+                            <h3>Consultas n&atilde;o Convertidas</h3>
+                            <p>O paciente premium busca seguran&ccedil;a. Falhas no encantamento comercial fazem procedimentos de alto ticket serem adiados ou perdidos.</p>
+                        </div>
+                        <div class="premium-card" data-reveal>
+                            <i data-lucide="database"></i>
+                            <h3>Ativo Ocioso (Base)</h3>
+                            <p>Pacientes de p&oacute;s-operat&oacute;rio s&atilde;o sua maior fonte de LTV. Negligenciar a recorr&ecirc;ncia de procedimentos est&eacute;ticos &eacute; queimar lucro.</p>
+                        </div>
+                        <div class="premium-card" data-reveal>
+                            <i data-lucide="trending-up"></i>
+                            <h3>Follow-up Inconsistente</h3>
+                            <p>A aus&ecirc;ncia de um protocolo sistem&aacute;tico de acompanhamento mata a exclusividade percebida e a convers&atilde;o final.</p>
+                        </div>
+                        <div class="premium-card" data-reveal>
+                            <i data-lucide="shield-check"></i>
+                            <h3>Fuga de Faturamento</h3>
+                            <p>Marketing de luxo atrai olhares, mas processos comerciais gen&eacute;ricos falham em transformar desejo em dep&oacute;sito no caixa.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="engenharia" class="engine-section section-padding">
+                <div class="container">
+                    <div class="section-header" data-reveal>
+                        <span class="tag">Protocolo GD</span>
+                        <h2>Onde a Gest&atilde;o encontra o <span class="highlight">Luxo.</span></h2>
+                    </div>
+
+                    <div class="engine-comparison" data-reveal>
+                        <div class="comp-col old">
+                            <h3>Status Quo</h3>
+                            <ul>
+                                <li><i data-lucide="x"></i> Campanhas sem Rastreio</li>
+                                <li><i data-lucide="x"></i> Atendimento Reativo</li>
+                                <li><i data-lucide="x"></i> Incerteza Mensal</li>
+                            </ul>
+                        </div>
+                        <div class="comp-col new">
+                            <h3>Padr&atilde;o GD</h3>
+                            <ul>
+                                <li><i data-lucide="check"></i> Engenharia de Convers&atilde;o</li>
+                                <li><i data-lucide="check"></i> Sistema de Receita Previs&iacute;vel</li>
+                                <li><i data-lucide="check"></i> Patrim&ocirc;nio Comercial</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="phases-section section-padding">
+                <div class="container">
+                    <div class="section-header" data-reveal>
+                        <span class="tag">Implementation Roadmap</span>
+                        <h2>Protocolo de Recupera&ccedil;&atilde;o de Faturamento</h2>
+                    </div>
+
+                    <div class="phases-grid">
+                        <div class="phase-item" data-reveal>
+                            <span class="p-num">I</span>
+                            <h4>Auditoria de Fluxo</h4>
+                            <p>Mapeamento cir&uacute;rgico de cada lead e taxa de convers&atilde;o por etapa.</p>
+                        </div>
+                        <div class="phase-item" data-reveal>
+                            <span class="p-num">II</span>
+                            <h4>Design Comercial</h4>
+                            <p>Scripts de alto padr&atilde;o e treinamento de "Concierge de Vendas".</p>
+                        </div>
+                        <div class="phase-item" data-reveal>
+                            <span class="p-num">III</span>
+                            <h4>Sistematiza&ccedil;&atilde;o</h4>
+                            <p>Arquitetura de CRM voltada para o LTV do paciente cir&uacute;rgico.</p>
+                        </div>
+                        <div class="phase-item" data-reveal>
+                            <span class="p-num">IV</span>
+                            <h4>Escala de Ativos</h4>
+                            <p>Ativa&ccedil;&atilde;o sistem&aacute;tica da base para novos procedimentos est&eacute;ticos.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cta-section section-padding">
+                <div class="container">
+                    <div class="cta-inner" data-reveal>
+                        <h2>Pronto para recuperar o faturamento que sua cl&iacute;nica est&aacute; perdendo?</h2>
+                        <a href="https://wa.me/44991274335" class="btn-primary lg" target="_blank">Quero minha Auditoria Gratuitamente</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="main-footer">
+            <div class="container footer-inner">
+                <div class="brand">
+                    <img src="Logo%20laranja%20PNG.png" alt="Logo" class="brand-logo">
+                </div>
+                <p class="copyright">&copy; 2026. Reserved for Excellence.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- ==========================================
+         MOBILE STRUCTURE (Refined Adaptive)
+         ========================================== -->
+    <div id="mobile-structure">
+        <header class="m-header">
+            <div class="m-container">
+                <img src="Logo%20laranja%20PNG.png" alt="GD Logo" class="m-logo">
+                <button class="m-menu-btn" onclick="toggleMMenu()">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </header>
+
+        <div class="m-nav-overlay" id="mNav">
+            <button class="m-close" onclick="toggleMMenu()"><i data-lucide="x"></i></button>
+            <nav class="m-links">
+                <a href="#m-protocolo" onclick="toggleMMenu()">Protocolo</a>
+                <a href="#m-engenharia" onclick="toggleMMenu()">Engenharia</a>
+                <a href="javascript:void(0)" onclick="accessCaseStudy(); toggleMMenu();">Estudo de Caso</a>
+                <a href="https://wa.me/44991274335" class="m-primary-link">Solicitar Auditoria</a>
+            </nav>
+        </div>
+
+        <main>
+            <section class="m-hero">
+                <video loop muted playsinline class="m-video" id="heroVideoMobile">
+                    <source src="Video Project 10.mp4" type="video/mp4">
+                </video>
+                <div class="m-hero-overlay"></div>
+                <div class="m-container m-hero-content">
+                    <span class="m-badge">Ultra-High Ticket Strategy</span>
+                    <h1 class="m-title">A Arte da Cirurgia.<br>A Ci&ecirc;ncia do <span class="highlight">Faturamento.</span></h1>
+                    <p class="m-subtitle">Para cl&iacute;nicas de Cirurgia Pl&aacute;stica que j&aacute; alcan&ccedil;aram a excel&ecirc;ncia técnica e agora buscam a previsibilidade absoluta de lucro e escala.</p>
+                    <div class="m-actions">
+                        <a href="https://wa.me/44991274335" class="m-btn-p" target="_blank">Auditar minha Opera&ccedil;&atilde;o</a>
+                        <a href="https://wa.me/44991274335" class="m-btn-s" target="_blank">Falar com Estrategista</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="m-protocolo" class="m-section">
+                <div class="m-container">
+                    <div class="m-header-sec">
+                        <span class="m-tag">O Diagn&oacute;stico Cir&uacute;rgico</span>
+                        <h2>A ociosidade &eacute; o custo invis&iacute;vel da sua reputa&ccedil;&atilde;o.</h2>
+                    </div>
+                    <div class="m-card-stack">
+                        <div class="m-v-card">
+                            <i data-lucide="award"></i>
+                            <div class="m-card-txt">
+                                <h3>Consultas n&atilde;o Convertidas</h3>
+                                <p>O paciente premium busca seguran&ccedil;a. Falhas no encantamento comercial fazem procedimentos de alto ticket serem adiados ou perdidos.</p>
+                            </div>
+                        </div>
+                        <div class="m-v-card">
+                            <i data-lucide="database"></i>
+                            <div class="m-card-txt">
+                                <h3>Ativo Ocioso (Base)</h3>
+                                <p>Pacientes de p&oacute;s-operat&oacute;rio s&atilde;o sua maior fonte de LTV. Negligenciar a recorr&ecirc;ncia de procedimentos est&eacute;ticos &eacute; queimar lucro.</p>
+                            </div>
+                        </div>
+                        <div class="m-v-card">
+                            <i data-lucide="trending-up"></i>
+                            <div class="m-card-txt">
+                                <h3>Follow-up Inconsistente</h3>
+                                <p>A aus&ecirc;ncia de um protocolo sistem&aacute;tico de acompanhamento mata a exclusividade percebida e a convers&atilde;o final.</p>
+                            </div>
+                        </div>
+                        <div class="m-v-card">
+                            <i data-lucide="shield-check"></i>
+                            <div class="m-card-txt">
+                                <h3>Fuga de Faturamento</h3>
+                                <p>Marketing de luxo atrai olhares, mas processos comerciais gen&eacute;ricos falham em transformar desejo em dep&oacute;sito no caixa.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="m-engenharia" class="m-section m-dark-sec">
+                <div class="m-container">
+                    <div class="m-header-sec">
+                        <span class="m-tag">Protocolo GD</span>
+                        <h2>Onde a Gest&atilde;o encontra o <span class="highlight">Luxo.</span></h2>
+                    </div>
+                    <div class="m-comparison-box">
+                        <div class="m-comp-side old">
+                            <h4>Status Quo</h4>
+                            <p>Campanhas sem Rastreio, Atendimento Reativo e Incerteza Mensal.</p>
+                        </div>
+                        <div class="m-comp-side new">
+                            <h4>Padr&atilde;o GD</h4>
+                            <p>Engenharia de Convers&atilde;o, Sistema de Receita Previs&iacute;vel e Patrim&ocirc;nio Comercial.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="m-section">
+                <div class="m-container">
+                    <div class="m-header-sec">
+                        <span class="m-tag">Implementation Roadmap</span>
+                        <h2>Protocolo de Recupera&ccedil;&atilde;o de Faturamento</h2>
+                    </div>
+                    <div class="m-step-list">
+                        <div class="m-step"><span>01</span> <strong>Auditoria de Fluxo:</strong> Mapeamento cir&uacute;rgico de cada lead e taxa de convers&atilde;o por etapa.</div>
+                        <div class="m-step"><span>02</span> <strong>Design Comercial:</strong> Scripts de alto padr&atilde;o e treinamento de "Concierge de Vendas".</div>
+                        <div class="m-step"><span>03</span> <strong>Sistematiza&ccedil;&atilde;o:</strong> Arquitetura de CRM voltada para o LTV do paciente cir&uacute;rgico.</div>
+                        <div class="m-step"><span>04</span> <strong>Escala de Ativos:</strong> Ativa&ccedil;&atilde;o sistem&aacute;tica da base para novos procedimentos est&eacute;ticos.</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="m-cta-sec">
+                <div class="m-container">
+                    <div class="m-cta-card">
+                        <h2>Pronto para recuperar o faturamento que sua cl&iacute;nica est&aacute; perdendo?</h2>
+                        <a href="https://wa.me/44991274335" class="m-btn-p" target="_blank">Quero minha Auditoria Gratuitamente</a>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="m-footer-minimal">
+                <img src="Logo%20laranja%20PNG.png" alt="Logo">
+                <p>&copy; 2026. Reserved for Excellence.</p>
+            </footer>
+        </main>
+    </div>
+
+    <!-- COMMON SCRIPTS -->
+    <script>
+        // Cinematic Preloader Engine & Reveal Sync
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                const preloader = document.getElementById('gd-preloader');
+                if(preloader) {
+                    preloader.classList.add('loaded');
+                    setTimeout(() => preloader.remove(), 1000);
+                }
+                
+                // INICIA AS OPACIDADES APENAS QUANDO A TELA DE LOADING SAI
+                document.querySelectorAll('[data-reveal], .m-v-card, .m-step').forEach(el => obs.observe(el));
+
+                // INICIA OS VÍDEOS SINCRONIZADOS COM A ABERTURA DA HERO
+                const dVideo = document.getElementById('heroVideoDesktop');
+                const mVideo = document.getElementById('heroVideoMobile');
+                if (dVideo) dVideo.play();
+                if (mVideo) mVideo.play();
+            }, 2000); // 2 second simulated loading for premium effect
+        });
+
+        lucide.createIcons();
+
+        // Reveal Animations (High Responsiveness - No Jumping)
+        const obs = new IntersectionObserver((es) => {
+            es.forEach(e => { 
+                if(e.isIntersecting && !e.target.classList.contains('active')) { 
+                    e.target.classList.add('active'); 
+                } 
+            });
+        }, { threshold: 0, rootMargin: '0px 0px 25% 0px' });
+
+        // Mobile Menu Toggle
+        function toggleMMenu() {
+            const m = document.getElementById('mNav');
+            m.classList.toggle('active');
+            document.body.style.overflow = m.classList.contains('active') ? 'hidden' : 'auto';
+        }
+
+        // Global Password Lock
+        function accessCaseStudy() {
+            const p = prompt("Acesso restrito. Digite a senha:");
+            if (p === "231119") window.location.href = "https://guellesdelgado-creator.github.io/guellesedelgado/estudo-de-caso";
+            else if (p) alert("Acesso negado.");
+        }
+
+        // Desktop Specific Effects
+        if (!window.isMobileDevice) {
+            window.addEventListener('scroll', () => {
+                const s = window.pageYOffset;
+                const v = document.getElementById('heroVideoDesktop');
+                const c = document.querySelector('.hero-content');
+                if (s < window.innerHeight) {
+                    if (v) v.style.transform = `translate(-50%, -50%) scale(${1 + s * 0.0002})`;
+                    if (c) { 
+                        c.style.opacity = 1 - (s / 700);
+                        c.style.transform = `translateY(${s * 0.12}px)`;
+                    }
+                }
+            });
+        }
+    </script>
+</body>
 </html>
